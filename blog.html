@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon.png" />
+    <script src="Blog.js"></script>
+    <script src="script.js"></script>
+    <style>
+
+
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #FFFDF7;
+            width: 1440px;
+            height: 1024px;
+
+
+        }
+        
+
+        
+        #textDiv {
+            width: 700px;
+            height: 300px;
+            color: #4F4F4F;
+            margin-left: 90px;
+
+
+
+        }
+
+        #box1 {
+            margin-top: 50px;
+            
+            height: 243px;
+            display: flex;
+
+        }
+
+        #box1 img {
+            margin-left: -240px;
+        }
+
+        #textDiv h1 {
+            font-size: 73px;
+        }
+
+       
+
+        #textDiv h2 {
+            font-size: 18px;
+        }
+
+        .BlogPost {
+            width: 409px;
+            height: 435px;
+            margin: 20px;
+            border-radius: 50px;
+            background-color: #AED5EC;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+            
+        }
+
+        .BlogPost img {
+            width: 63px;
+            height: 63px;
+            border-radius: 200px;
+            float: left;
+            margin: 20px;
+            margin-left: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .BlogPost img:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            width: 65px;
+            height: 65px;
+        }
+
+        .BlogPost h1 {
+            margin-top: 40px;
+            
+        }
+
+
+        .BlogPost div {
+            background-color: #FFFFFF;
+            margin: 20px 30px;
+            margin-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            
+
+        }
+
+        .BlogPost div h2 {
+            font-size: 21px;
+            text-indent:-80px;
+        }
+
+        .BlogPost div h3 {
+            font-size: 19px;
+
+        }
+
+        .BlogPost div h4 {
+            font-size: 18px;
+            text-indent: 6px;
+
+        }
+
+        #post2 {
+            position: relative;
+            top: 110px;
+        }
+
+        #post3 {
+            position: relative;
+            top: 220px;
+        }
+
+        #box2 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 52px;
+            position: relative;
+            top: 100px;
+            margin-left: 52px;
+        }
+
+     .popUpOverlay {
+    display: flex; 
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.popUpOverlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popUpImg {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.BlogPost div h2 {
+    text-align: left;
+}
+
+
+
+
+         /*--------------------   Nav Bar     -----------------------*/
+        #favicon-img {
+  width: 115px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+#petties-logo {
+  width: 310px;
+  height: 95px;
+  margin-left: -10px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+
+
+}
+
+#logo-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  float: left;
+    display: flex;
+  
+}
+
+.home-a {
+  text-decoration: none;
+  color: #4f4f4f;
+  height: 28px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#home-links-container {
+  font-size: 17px;
+  justify-content: center;
+  margin-top: 60px;
+  
+  width: 1400px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+  
+}
+
+#container1 {
+    position: relative;
+    box-shadow: 0 0 25px #fadadd, 0 0 60px #fadadd;
+  background-color: #ff9d9d85;
+  border-radius: 30px;
+  width: 1340px; 
+  height:100px;
+  z-index: 1000;
+  margin-left:30px ;
+  display: flex;
+  margin-bottom: -50px;
+  margin-top: 30px;
+  
+}
+
+#home-links-container a:hover{
+background-color: #fdfafb32;
+border-radius: 50px;
+box-shadow: 0 0 25px #f2031b59, 0 0 60px #fadadd;
+font-size: 110%;
+text-align: center;
+}
+
+        /*------------------------------------------------------------------*/
+    </style>
+</head>
+
+<body >
+
+      <!--###################################   Nav Bar   #######################################---->
+<div id="container1" >
+        <div id="logo-container">
+          <img id="favicon-img" src="Images/Favicon.png" alt="PetPaw Logo" />
+          <img
+            id="petties-logo"
+            src="Images/Logo(text).png"
+            alt="Petties Logo"
+          />
+        </div>
+        <!--HOME LINKS-->
+
+        <div id="home-links-container" class="capitalize">
+          <a href="index.html#home" class="home-a" 
+            >&nbsp;<span class="underline"> home </span>&nbsp;</a
+          >|
+
+          <a href="index.html#about-us" class="home-a"
+            >&nbsp;<span class="underline"> about us </span>&nbsp;</a
+          >
+          |
+
+          <a href="index.html#services" class="home-a"
+            >&nbsp;<span class="underline"> services </span>&nbsp;</a
+          >
+          |
+
+          <a href="gallery.html" class="home-a"
+            >&nbsp;<span class="underline"> gallery </span>&nbsp;</a
+          >
+          |
+
+          <a href="contact_us.html" class="home-a"
+            >&nbsp;<span class="underline"> contact us </span>&nbsp;</a
+          >
+          |
+
+          <a href="FAQ.html" class="home-a"
+            >&nbsp;<span class="underline"> FAQ </span>&nbsp;</a
+          >
+          |
+
+          <a href="blog.html" class="home-a"
+            >&nbsp;<span class="underline"> our blog </span>&nbsp;</a
+          >
+          |
+          <a href="case_studies.html" class="home-a"
+            >&nbsp;<span class="underline"> case studies </span>&nbsp;</a
+          >
+
+          |
+
+          <a href="sign_in.html" class="home-a"
+            >&nbsp;<span class="underline"> sign in </span>&nbsp;</a
+          >
+          |
+
+          <a class="home-a" onclick="logout()"
+            >&nbsp;<span class="underline"> log out </span>&nbsp;</a
+          >
+        </div>
+      </div>
+<!--##########################################################################---->
+    <div id="box1">
+        <div id="textDiv">
+            <h1>Our Blog</h1>
+            <h2>Tips, News & Stories for Pet Lovers</h2>
+            <p>Welcome to our blog! <br>
+                Whether you're a pet owner, rescuer, or animal lover, you'll find useful tips, touching stories, <br>
+                and the latest updates from our community. Stay informed and inspired!</p>
+        </div>
+        <img src="Images/Blog_Page/Pet_Sharing_Interface.webp" alt="">
+    </div>
+
+    <div id="box2">
+
+        <div class="BlogPost" id="post1" >
+            <img src="Images/Blog_Page/profile_picture1.jpg" alt="" onclick="showpopup(this.src)">
+            <h1>James Carter</h1>
+            <div>
+                <h2>Blog Post 1: 5 Tips to Keep <br> Your Pet Safe in Summer</h2>
+                <h3>Date: May 5, 2025</h3>
+
+                <h4><span style="color:#FF1313 ;">Excerpt:</span><br>
+                    Hot weather can be dangerous for pets.
+                    Learn simple ways to keep your furry friends cool and healthy during the summer months.
+                </h4>
+
+            </div>
+        </div>
+
+        <div class="BlogPost" id="post2">
+            <img src="Images/Blog_Page/profile_picture2.png" alt="" onclick="showpopup(this.src)">
+            <h1>Emily Parker</h1>
+            <div >
+                <h2>Blog Post 2: How to Prepare <br> Your Home for a Rescue Pet</h2>
+                <h3>Date: April 20, 2025</h3>
+
+                <h4><span style="color:#FF1313 ;">Excerpt:</span><br>
+                    Welcoming a rescued animal into your home is a beautiful step.
+                    Here’s a checklist to help you get ready for your new furry companion.</h4>
+            </div>
+        </div>
+
+        <div class="BlogPost" id="post3">
+            <img src="Images/Blog_Page/profile_picture3.webp" alt=" " onclick="showpopup(this.src)">
+            <h1>Michael Brooks</h1>
+            <div>
+                <h2>Blog Post 3: Lost Pet? Here’s <br> What to Do Immediately</h2>
+                <h3>Date: March 28, 2025</h3>
+
+                <h4><span style="color:#FF1313 ;">Excerpt:</span><br>
+                    Losing a pet is scary. Follow these steps right away to improve your chances of finding them
+                    quickly and safely.</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="profilePopUp" class="popUpOverlay" onclick="closspopup()" >
+        <img id="popUpImg" class="popUpImg" src="" alt="">
+
+    </div>
+
+
+
+
+</body>
+
+</html>
