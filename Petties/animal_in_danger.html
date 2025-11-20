@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal In Danger</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon.png">
+    <script src="script.js"></script>
+  </head>
+  <body class="post-body"> 
+
+
+
+    <form class="post-form" enctype="multipart/form-data"  >
+      <div class="post-big-container">
+        <div class="post-text-bg orange-bg">
+          <h1>Report an<br />Animal in<br />Danger</h1>
+
+          <p>
+            Have you seen an animal in distress? <br />
+            Don’t wait. Share the details so we can <br />
+            act quickly.
+          </p>
+        </div>
+        <!--POST FORM-->
+        <div id="post1-form" >
+            
+            <input name="Location" class="inputs short-inputs orange-bg-inputs" type="text" id="danger-post-contact-info" placeholder="&nbsp; Location...">
+            
+            <textarea name="Description" class="inputs long-inputs orange-bg-inputs" id="post-description" placeholder="Description..."></textarea>
+            
+            <input name="Contact-info" class="inputs short-inputs orange-bg-inputs" type="text" id="danger-post-contact-info" placeholder="&nbsp; Contact Info...">
+            
+            <input name="Pet-img" class="inputs long-inputs orange-bg-inputs" type="file" class="pet-img" accept="image/*" >
+            
+            <button class="post-button orange-button" type="submit">Post</button>
+        </div>
+
+       
+      </div>
+    </form>
+
+     <!--IMAGE AND NOTE DIV-->
+
+        <div id="danger-post-footer">
+            <img src="Images\Animal_in_Danger_Page\Dog_in_Danger.png" alt="">
+            <p>
+                🚨 If the animal is in immediate danger, please call <br> &emsp; &nbsp; emergency services first.  0600000000
+            </p>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,927 @@
+html{
+  scroll-behavior: smooth;
+  
+}
+
+
+section {
+  margin: auto;
+  background-color: #fffdf7;
+  width: 1440px;
+  height: 1024px;
+ padding: 20px;
+  font-family: "Fredoka", sans-serif;
+  color: #4f4f4f;
+  margin-bottom: -100px ;
+}
+
+
+#index-body{
+  margin: auto;
+  background-color: #fffdf7;
+  width: 1440px;
+  height: 1024px;
+  font-family: "Fredoka", sans-serif;
+  color: #4f4f4f;
+}
+
+div {
+  display: flex;
+  
+}
+
+button{
+  cursor: pointer;
+}
+
+
+/**********************************************************************/
+
+
+#favicon-img {
+  width: 115px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+#petties-logo {
+  width: 310px;
+  height: 95px;
+  margin-left: -10px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+
+
+}
+
+#logo-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  
+    
+  
+}
+
+.home-a {
+  text-decoration: none;
+  color: #4f4f4f;
+  height: 28px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  
+}
+
+#home-links-container {
+  font-size: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 20px;
+  width: 1400px;
+  margin-right: 50px;
+  
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+  
+}
+
+#container1 {
+  box-shadow: 0 0 25px #fadadd, 0 0 60px #fadadd;
+  background-color: #ff9d9d85;
+  border-radius: 30px;
+  position: fixed;
+  width: 1440px; 
+  height:100px;
+  z-index: 1000;
+  margin-left: 20px;
+  
+}
+
+#container2 {
+  flex-direction: row;
+  display: flex;/*omit*/
+  flex-wrap: wrap; /*“If there isn’t enough space on one line, move the extra items to the next line.”*/
+  justify-content: space-between;/*omit*/
+  
+}
+
+#container2 img{
+  margin-top: 70px;
+  margin-left: 50px;
+ 
+}
+
+
+#home-title-text-container {
+  clear: both;/*omit*/
+  flex-direction: column;
+  clear: both;/*omit*/
+  float: left;/*omit*/
+  width: 872px;
+  height: 160px;
+  padding: 20px 40px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+#hero-section-container {
+  width: 530px;
+  height: 730px;
+  background-image: url("Images/Home_Page/Hero_Section.webp");
+  background-size: 516px 780px;
+  background-position: right;
+  background-repeat: no-repeat;
+  justify-self: right;
+  align-items: center;
+  clear: both; /*omit*/
+  opacity: 0.5;
+  flex-direction: column;
+  margin-left: -30px;
+  transform: scaleX(-1);
+  margin-top: -100px;
+  
+  
+}
+
+#home h1 {
+  font-size: 50px;
+}
+
+#home h3 {
+  font-size: 25px;
+  margin-top: -20px;
+}
+
+#buttons-container{
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-evenly ;
+  width: 500px;
+  margin-left: 50px;
+}
+
+
+
+#buttons-container button{
+  
+  width: 200px;
+  height: 90px ;
+  border-radius: 50px;
+  background-color: #f18484bd;
+  border-color: #df3b3b;
+  color: rgb(248, 228, 177);
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+  margin-right: 100px;
+  box-shadow: 0 0 25px #fadadd, 0 0 60px #fadadd;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+
+}
+
+
+
+/**********************************************************************/
+
+#about-us-header {
+  
+  flex-direction: row;
+  height: 200px;
+}
+
+#about-us-header h1 {
+  padding: 30px 60px 30px 60px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#paw-in-hands-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+#blue-bg-div {
+  width: 1438px;
+  height: 620px;
+  background-color: #cdedf66c;
+  border-radius: 20px;
+}
+
+#blue-bg-div p {
+  font-size: 22px;
+  width: 872px;
+  height: 80px;
+}
+
+#blue-bg-div h2 {
+  font-size: 42px;
+  width: 333px;
+  margin-top: -20px;
+  margin-bottom: -15px;
+}
+
+#about-us-text-container {
+  padding: 20px 20px 0px 80px;
+  flex-direction: column;
+  height: 600px;
+}
+
+#team-members-div {
+  background-color: #b0e5f492;
+box-shadow: 0 0 25px #9ceef4, 0 0 60px #fadadd;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 280px;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+#team-members-div h3 {
+  font-size: 45px;
+}
+#team-members-div li {
+  font-size: 30px;
+  text-shadow: 1px;
+}
+
+
+#caring-pets-img {
+  border-radius: 175px;
+  width: 495px;
+  height: 330px;
+  display: flex;
+  justify-self: flex-end;
+  margin-top: -230px;
+  margin-right: 10px;
+}
+
+#blue-bg-div{
+  position: relative;
+  z-index: 1;
+  
+}
+
+#blue-bg-div::before {
+  background-image: url("Images/About_Us_Page/Pet_Caring.jpg");
+  content: "";
+  position: absolute;
+  top: 0;
+  nav-left: 0;/*omit*/
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+/******************************      ANIMAL IN DANGER       ****************************************/
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fredoka', sans-serif;
+  
+}
+.post-big-container {
+  flex-direction: row;
+}
+
+.orange-bg{
+  background-color: #f7930891;
+}
+.post-text-bg {
+  border-radius: 50px;
+  padding: 30px;
+  width: 700px;
+  height: 800px;
+  flex-direction: column;
+  margin: 30px 60px;
+  margin-right: -5px;
+  
+}
+
+.post-text-bg h1 {
+  font-size: 80px;
+  margin: 0px 0px 0px 20px;
+  
+}
+
+.post-text-bg p {
+  font-size: 30px;
+  margin: 15px 0px 0px 20px;
+  
+}
+
+#post1-form{
+  border-radius: 50px;
+  padding: 30px;
+  width: 500px;
+  height: 700px;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#post1-form::before {
+  background-image: url("Images/Animal_in_Danger_Page/Dod_in_Danger2.png");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.orange-bg-inputs{
+  background-color: #ffe5b4a9;
+  border: 1px solid #5c3602;
+}
+.inputs {
+  border-radius: 50px;
+  font-size: 20px;
+  width: 300px;
+  padding: 30px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  
+}
+
+/*IMAGE BUTTON*/
+
+
+.short-inputs {
+  height: 20px;
+}
+.long-inputs {
+  height: 100px;
+}
+.orange-button{
+  background-color: #fd940092;
+  border-color: #b56a00;
+}
+.post-button {
+  width: 222px;
+  height: 60px;
+  border-radius: 75px;
+  font-size: 30px;
+  font-family: "Fredoka", sans-serif;
+  color: #3b3b3b;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-button:hover{
+font-size: 35px;
+width: 230px;
+  height: 65px;
+}
+
+.post-button:active{
+font-size: 35px;
+width: 230px;
+  height: 65px;
+  background-color: #535658c5;
+}
+
+#danger-post-footer {
+  flex-direction: row;
+  margin-top: -360px;
+}
+
+#danger-post-footer img {
+  width: 430px;
+  height: 450px;
+}
+
+#danger-post-footer p {
+  color: rgb(179, 2, 2);
+  font-size: 30px;
+  width: 750px;
+  display: flex;
+  
+  height: 100px;
+  margin: 370px 5px 5px 200px ;
+}
+#danger-post-footer a {
+  margin-left: -30px;
+}
+
+/*******************************      FOUND PET        ***************************************/
+
+#post2-form{
+  border-radius: 50px;
+  padding: 30px;
+  width: 550px;
+  height: 800px;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#post2-form::before {
+  background-image: url("Images/Found_Pet_Page/Feeding_Cat.webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  nav-left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+
+
+.pink-bg{
+  background-color: #FADADD;
+}
+.pink-bg-inputs{
+  background-color: #fadadd8f;
+  border: 1px solid #ca3c3cd1;
+}
+
+.pink-button{
+  background-color: #FFC5CB;
+  border-color: #EB6767;
+}
+
+
+#found-post-footer {
+  flex-direction: row;
+  margin-top: -330px;
+}
+
+
+#found-post-footer img {
+  width: 600px;
+  height: 400px;
+  border-radius: 90px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+/****************************      LOST PET      ******************************************/
+
+#post3-form{
+  border-radius: 50px;
+  padding: 30px;
+  width: 550px;
+  height: 800px;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#post3-form::before {
+  background-image: url("Images/Lost_Pet_Page/Missing_Pet.webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  nav-left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+
+
+.green-bg{
+  background-color: #D0F0C0;
+}
+.green-bg-inputs{
+  background-color: #d0f0c097;
+  border: 1px solid #2a491cd1;
+}
+
+.green-button{
+  background-color: #D0F0C0;
+  border-color: #359E00;
+}
+
+
+#lost-post-footer {
+  flex-direction: row;
+  margin-top: -330px;
+}
+
+
+#lost-post-footer img {
+  width: 600px;
+  height: 400px;
+  border-radius: 90px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+/******************************       ADOPTION      ****************************************/
+
+#post4-form{
+  border-radius: 50px;
+  padding: 30px;
+  width: 550px;
+  height: 800px;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#post4-form::before {
+  background-image: url("Images/Adoption_Page/Adopt_Me.webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  nav-left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+
+
+.blue-bg{
+  background-color: #CDEDF6;
+}
+.blue-bg-inputs{
+  background-color: #cdedf689;
+  border: 1px solid #1c3f49d1;
+}
+
+.blue-button{
+  background-color: #A0E8FC;
+  border-color: #1D7BAE;
+}
+
+
+#adoption-post-footer {
+  flex-direction: row;
+  margin-top: -330px;
+}
+
+
+#adoption-post-footer img {
+  width: 600px;
+  height: 400px;
+  border-radius: 90px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
+/******************************    MATING     ****************************************/
+
+#post5-form{
+  border-radius: 50px;
+  padding: 30px;
+  width: 550px;
+  height: 800px;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+#post5-form::before {
+  background-image: url("Images/Mating_Page/Joyful_Dogs.webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  nav-left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+
+
+.purple-bg{
+  background-color: #D0CDF6;
+}
+.purple-bg-inputs{
+  background-color: #d0cdf693;
+  border: 1px solid #473EA5;
+}
+
+.purple-button{
+  background-color: #AFA8FF;
+  border-color: #766AFC;
+}
+
+
+#mating-post-footer {
+  flex-direction: row;
+  margin-top: -330px;
+}
+
+
+#mating-post-footer img {
+  width: 600px;
+  height: 550px;
+  border-radius: 90px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
+#mating-post-footer p {
+  color: #897FEE;
+  font-size: 30px;
+  width: 750px;
+  display: flex;
+  height: 100px;
+  margin: 370px 5px 5px 200px ;
+}
+
+/*******************************  SERVICES    ***************************************/
+
+#services{
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  
+}
+
+#services::before {
+  background-image: url("Images/Services/services_background_img.webp");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+#services-container{
+  width: 1440px;
+  height: 1024px;
+  flex-direction: column;
+  
+}
+#services-title-container{
+margin-top: 150px;
+width: 650px;
+margin-left: 90px;
+}
+#services-title-container h1{
+  margin: 70px;
+  font-size: 70px;
+}
+
+#round-container{
+  margin-left: 520px;
+  margin-top: -260px;
+   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3); 
+  border-radius: 20px; 
+  background-color: #ffe642ae;
+  padding: 25px;
+  border-radius: 1200px;
+  width: 600px;
+  height: 580px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*     for services page         */
+#icons-container1 {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#icons-container2 {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#icons-container2 img{
+  margin-right: 100px;
+  margin-left: 100px;
+  
+}
+
+#icons-container2 h1{
+  
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+#icons-container3 {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#icons-container3 img{
+  margin-right: 50px;
+  margin-left: 60px;
+}
+
+.icons {
+  width: 138px;
+  height: 140px;
+  transition: all 0.5s ease-in-out;
+}
+
+.icons:hover{
+   box-shadow: 0 0 60px rgba(39, 38, 38, 0.3); 
+   border-radius: 120px;
+   width: 160px;
+  height: 160px;
+}
+
+.icons:active{
+  background-color: #a362076f;
+}
+/******************************    ANIMATION      ****************************************/
+
+ 
+/*                                  HOME                           */
+
+#home-links-container a:hover{
+background-color: #fdfafb32;
+border-radius: 50px;
+box-shadow: 0 0 25px #f2031b59, 0 0 60px #fadadd;
+font-size: 110%;
+text-align: center;
+}
+
+
+#buttons-container button::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  /*
+  
+It creates a diagonal highlight effect across the background using a transparent-white-transparent gradient.
+
+linear-gradient(...)
+Tells the browser to create a smooth transition between multiple colors in a straight line.
+
+120deg
+This is the angle of the gradient.
+
+0deg goes from top to bottom.
+
+90deg goes left to right.
+
+120deg creates a diagonal gradient from bottom-left to top-right.
+
+transparent
+The starting and ending color of the gradient — fully transparent.
+
+rgba(255, 255, 255, 0.4)
+
+rgba stands for Red, Green, Blue, Alpha.
+
+255,255,255 = white.
+
+0.4 = 40% opacity → semi-transparent white in the middle.
+  
+  */
+  transition: all 0.5s;
+}
+
+#buttons-container button:hover::before {
+left: 100%;
+}
+
+#buttons-container button:active{
+  background-color: rgb(255, 215, 215);
+  transform: translateY(4px); /*moving down 4px*/
+}
+
+
+
+/*                       WHO WE ARE    (modal)                                   */
+
+#story-read-more-btn{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  font-family: "Fredoka", sans-serif;
+  text-decoration: underline;
+  font-size: large;
+  color: #473EA5;
+  transition: all 0.5s ease-in-out;
+  
+}
+#story-read-more-btn:hover{
+  font-size:20px ;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;  /*If the content inside the modal is too big, this will allow scrolling inside the modal.*/
+  background-color: #3838387e;
+  border: 1px solid #eb0606;
+}
+
+
+.modal-contant{
+  background-color: #fffdf7;
+  margin: 10% auto; /*auto horizontally centers the modal.*/
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Fredoka", sans-serif;
+    flex-direction: column;
+    padding-left: 30px;
+    
+}
+
+.close{
+  color: #4f4f4f;
+  float: right; /*omit*/
+  font-size: 28px;
+  
+  
+}
+
+.close:hover{
+  cursor: pointer;
+}
+  
+
+
+
+
+
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon.png" />
+     <script src="script.js"></script>
+    <style>
+
+
+/*--------------------   Nav Bar     -----------------------*/
+        #favicon-img {
+  width: 115px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+#petties-logo {
+  width: 310px;
+  height: 95px;
+  margin-left: -10px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+
+
+}
+
+#logo-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  float: left;
+    display: flex;
+  
+}
+
+.home-a {
+  text-decoration: none;
+  color: #4f4f4f;
+  height: 28px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#home-links-container {
+  font-size: 17px;
+  justify-content: center;
+  margin-top: 60px;
+  
+  width: 1400px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+  
+}
+
+#container1 {
+    position: relative;
+    box-shadow: 0 0 25px #fadadd, 0 0 60px #fadadd;
+  background-color: #ff9d9d85;
+  border-radius: 30px;
+  width: 1340px; 
+  height:100px;
+  z-index: 1000;
+  margin-left:-30px ;
+  display: flex;
+  margin-bottom: -50px;
+  
+}
+#home-links-container a:hover{
+background-color: #fdfafb32;
+border-radius: 50px;
+box-shadow: 0 0 25px #f2031b59, 0 0 60px #fadadd;
+font-size: 110%;
+text-align: center;
+
+}
+
+        /*------------------------------------------------------------------*/
+        body {
+            margin: 0;
+            font-family: 'Fredoka', sans-serif;
+            background-color: #fdfdfd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 850px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #c3b9f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            font-size: 65px;
+            margin: 0;
+            color: #4f4f4ff4;
+            
+        }
+
+        .contact-info a {
+            text-align: center;
+            color: #4F4F4F;
+            text-decoration: none;
+
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .content {
+            padding: 20px 10px;
+            font-weight: bold;
+            color: #4F4F4F;
+            font-size: 20px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+
+        }
+
+        .content p {
+            
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            
+        }
+        .content pre {
+            
+            font-family: 'Fredoka', sans-serif;
+            margin-left: 30px;
+            
+        }
+
+        .form-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .form-box {
+            background-color: #d3ccfa;
+            padding: 20px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 350px;
+            margin-left: 250px;
+            margin-top: 5px;
+            
+            /* ⬅ هذه اللي بتحركه شوي لليمين */
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-box button {
+            background-color: #767ff7b5;
+            color: black;
+            border: 1px  solid rgb(87, 11, 229);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            font-family: 'Fredoka', sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+        .form-box button:hover {
+            background-color: #494e9cb5;
+           box-shadow: 0px 4px 8px rgpa(0,0,0,0.2);
+            padding: 12px 24px;
+           
+           
+
+        }
+
+        .illustration img {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body >
+    <!--###################################   Nav Bar   #######################################---->
+<div id="container1" >
+        <div id="logo-container">
+          <img id="favicon-img" src="Images/Favicon.png" alt="PetPaw Logo" />
+          <img
+            id="petties-logo"
+            src="Images/Logo(text).png"
+            alt="Petties Logo"
+          />
+        </div>
+        <!--HOME LINKS-->
+
+        <div id="home-links-container" class="capitalize">
+          <a href="index.html#home" class="home-a" 
+            >&nbsp;<span class="underline"> home </span>&nbsp;</a
+          >|
+
+          <a href="index.html#about-us" class="home-a"
+            >&nbsp;<span class="underline"> about us </span>&nbsp;</a
+          >
+          |
+
+          <a href="index.html#services" class="home-a"
+            >&nbsp;<span class="underline"> services </span>&nbsp;</a
+          >
+          |
+
+          <a href="gallery.html" class="home-a"
+            >&nbsp;<span class="underline"> gallery </span>&nbsp;</a
+          >
+          |
+
+          <a href="contact_us.html" class="home-a"
+            >&nbsp;<span class="underline"> contact us </span>&nbsp;</a
+          >
+          |
+
+          <a href="FAQ.html" class="home-a"
+            >&nbsp;<span class="underline"> FAQ </span>&nbsp;</a
+          >
+          |
+
+          <a href="blog.html" class="home-a"
+            >&nbsp;<span class="underline"> our blog </span>&nbsp;</a
+          >
+          |
+          <a href="case_studies.html" class="home-a"
+            >&nbsp;<span class="underline"> case studies </span>&nbsp;</a
+          >
+
+          |
+
+          <a href="sign_in.html" class="home-a"
+            >&nbsp;<span class="underline"> sign in </span>&nbsp;</a
+          >
+          |
+
+          <a class="home-a" onclick="logout()"
+            >&nbsp;<span class="underline"> log out </span>&nbsp;</a
+          >
+        </div>
+      </div>
+<!--##########################################################################---->
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p><a href="tel:06-06060566">06-06060566</a></p>
+                <p><a href="mailto:petties2025@hotmail.com" style="text-decoration: underline;">petties2025@hotmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <pre >We’re Here to Help – Get in Touch!
+                
+Whether you found a pet, lost one, or just want to know more about our
+work—don’t hesitate to reach out.
+We care, we listen, and we’re always happy to hear from fellow animal
+lovers. </pre>
+
+            <div class="form-section">
+                <div class="form-box">
+                    <div class="form-row"> <input type="text" placeholder="*First name" required> <input type="text"
+                            placeholder="*Last name" required> </div> <input type="email" placeholder="Email..."
+                        required> <textarea rows="4" placeholder="What can we help you with?"></textarea>
+                         <button type="submit">Submit</button>
+                </div>
+                <div class="illustration"> <img src="Images/Contact_Us_Page/Dog_and_Laptop.webp" alt="Dog and Laptop">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+     
+      const submitButton = document.querySelector('.form-box button');
+
+      
+      submitButton.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        alert("Your message has been submitted!"); 
+      });
+    </script>
+</body>
+
+</html>
